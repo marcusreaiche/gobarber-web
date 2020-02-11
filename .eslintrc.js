@@ -40,7 +40,7 @@ module.exports = {
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-props-no-spreading": [2, {
       "html": "enforce",
-      "exceptions": ["Route"]
+      "exceptions": ["Route", "Component"]
     }]
   },
   settings: {
