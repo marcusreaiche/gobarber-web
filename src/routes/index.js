@@ -11,11 +11,11 @@ import Profile from "../pages/Profile";
 export default function Routes() {
   return (
     <Switch>
-      <Route path="/" exact component={ SignIn } />
-      <Route path="/register" component={ SignUp } />
+      <Route path="/" exact component={SignIn} />
+      <Route path="/register" component={SignUp} />
 
-      <Route path="/dashboard" isPrivate component={ Dashboard } />
-      <Route path="/profile" isPrivate component={ Profile } />
+      <Route path="/dashboard" isPrivate component={Dashboard} />
+      <Route path="/profile" isPrivate component={Profile} />
     </Switch>
   );
 }
