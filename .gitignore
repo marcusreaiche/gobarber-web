@@ -25,3 +25,6 @@ yarn-error.log*
 # Other eslint files
 _eslintrc.js
 __eslintrc.js
+
+# my folders
+css_tricks/
