@@ -6,9 +6,9 @@ import api from "../../../services/api";
 
 function* profileUpdate({ payload }) {
   try {
-    const { name, email, ...rest } = payload;
+    const { name, email, avatar_id, ...rest } = payload;
     // We gonna include the password data iff oldPassword is present
-    const data = { name, email, ...(rest.oldPassword ? rest : {}) };
+    const data = { name, email, avatar_id, ...(rest.oldPassword ? rest : {}) };
     const response = yield call(api.put, "/users", data);
     yield put(profileUpdateSuccess(response.data));
     toast.info("Perfil atualizado");

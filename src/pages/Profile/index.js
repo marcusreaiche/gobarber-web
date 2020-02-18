@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { profileUpdateRequest } from "../../store/modules/user/actions";
 import { Container } from "./styles";
+import AvatarInput from "./AvatarInput";
 
 export default function Profile() {
   const profile = useSelector(state => state.user.profile);
@@ -16,6 +17,7 @@ export default function Profile() {
   return (
     <Container>
       <Form initialData={profile} onSubmit={handleSubmit}>
+        <AvatarInput name="avatar_id" />
         <Input name="name" placeholder="Seu nome completo" />
         <Input name="email" placeholder="Seu endereço de email" />
         <hr />
